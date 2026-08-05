@@ -1,4 +1,4 @@
-package com.example.beanscope.Task4_Scopes;
+package com.example;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,7 +9,7 @@ public class Main {
 
         ApplicationContext container =
                 new ClassPathXmlApplicationContext(
-                        "com/example/beanscope/Task4_Scopes/ application-context.xml");
+                        "com/example/ application-context.xml");
 
         Shape circle = container.getBean("circleBean", Shape.class);
 

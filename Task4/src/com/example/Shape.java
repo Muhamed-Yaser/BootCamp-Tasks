@@ -1,4 +1,4 @@
-package com.example.beanscope.Task4_Scopes;
+package com.example;
 
 public interface Shape {
     void draw();
