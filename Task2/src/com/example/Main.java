@@ -9,9 +9,9 @@ public class Main {
 
         ApplicationContext container =
                 new ClassPathXmlApplicationContext("com/example/application-context.xml");
-
+        //car
         Car car = container.getBean("carBean", com.example.Car.class);
-
+        //plane
         Plane plane = container.getBean("planeBean", com.example.Plane.class);
 
         car.insert("Mercedes c200");
