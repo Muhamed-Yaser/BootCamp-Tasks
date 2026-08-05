@@ -7,13 +7,13 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="draw2dBean"
-          class="com.example.beanscope.Task4_Scopes.Draw2d"/>
+          class="com.example.Draw2d"/>
 
     <bean id="draw3dBean"
-          class="com.example.beanscope.Task4_Scopes.Draw3d"/>
+          class="com.example.Draw3d"/>
 
     <bean id="circleBean"
-          class="com.example.beanscope.Task4_Scopes.Circle"
+          class="com.example.Circle"
           scope="singleton">
 
         <constructor-arg ref="draw2dBean"/>
@@ -21,7 +21,7 @@
     </bean>
 
     <bean id="squareBean"
-          class="com.example.beanscope.Task4_Scopes.Square"
+          class="com.example.Square"
           scope="prototype">
 
         <property name="draw3d"
