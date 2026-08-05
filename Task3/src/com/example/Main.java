@@ -10,9 +10,9 @@ public class Main {
         ApplicationContext container =
                 new ClassPathXmlApplicationContext(
                         "com/example/application-context.xml");
-
+        //circle
         Shape circle = container.getBean("circleBean", Shape.class);
-
+        //square
         Shape square = container.getBean("squareBean", Shape.class);
 
         circle.draw();
