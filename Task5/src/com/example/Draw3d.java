@@ -1,4 +1,4 @@
-package com.example.beanscope.BeansLifecycle_Task5;
+package com.example;
 
 public class Draw3d {
 
